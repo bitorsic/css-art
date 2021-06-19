@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Art</title>
+    <style>
+        body {
+            background: rgb(54, 54, 54);
+            height: 100vh;
+            display: -ms-grid;
+            display: grid;
+            place-items: center;
+            margin: 0;
+        }
+
+        .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .face {
+            position: relative;
+            width: 310px;
+            height: 400px;
+            background: #C68863;
+            border-radius: 2em;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+            align-items: baseline;
+            -webkit-box-shadow: inset -20px 0px 10px 10px #B06C49;
+            box-shadow: inset -20px 0px 10px 10px #B06C49;
+        }
+
+        .hair {
+            position: absolute;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            background: black;
+            top: -100px;
+            left: -28px;
+            width: 430px;
+            height: 170px;
+            border-radius: 1em;
+            border-top-left-radius: 4em;
+            border-bottom-right-radius: 4em;
+        }
+
+        .eye-level,
+        .glasses {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .left-ear,
+        .right-ear {
+            position: relative;
+            top: 80px;
+            width: 45px;
+            height: 110px;
+        }
+
+        .left-ear {
+            right: 30px;
+            border-bottom-left-radius: 5em;
+            border-top-left-radius: 3em;
+            background: #C68863;
+        }
+
+        .right-ear {
+            left: 30px;
+            background: #B06C49;
+            border-bottom-right-radius: 5em;
+            border-top-right-radius: 3em;
+        }
+
+        .left-hair,
+        .right-hair {
+            position: absolute;
+            top: 60px;
+            width: 35px;
+            height: 120px;
+            background: black;
+            border-radius: .8em;
+        }
+
+        .left-hair {
+            left: -10px;
+        }
+
+        .right-hair {
+            right: -10px;
+        }
+
+        .glass {
+            position: relative;
+            top: 90px;
+            border: 15px solid #180c05;
+            width: 70px;
+            height: 70px;
+            border-radius: 1em;
+        }
+
+        .glass-connector {
+            position: relative;
+            top: 130px;
+            background: #110904;
+            width: 45px;
+            height: 15px;
+        }
+
+        .left-beard,
+        .right-beard {
+            position: absolute;
+            top: 160px;
+            width: 10px;
+            height: 120px;
+            background: black;
+            border-radius: 1em;
+        }
+
+        .left-beard {
+            left: 0px;
+        }
+
+        .right-beard {
+            right: 0px;
+        }
+
+        .lower-beard {
+            position: absolute;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            background: black;
+            top: 260px;
+            width: 330px;
+            height: 150px;
+            border-radius: 1em 1em 3em 3em;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        .left-gap,
+        .right-gap {
+            position: relative;
+            bottom: 40px;
+            width: 25px;
+            height: 120px;
+            background: #C68863;
+            border-radius: 1em;
+        }
+
+        .left-gap {
+            left: 60px;
+        }
+
+        .right-gap {
+            right: 60px;
+        }
+
+        .lips {
+            position: relative;
+            border: 30px solid #743D2B;
+            -ms-flex-line-pack: justify;
+            align-content: space-between;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            top: -10px;
+            width: 120px;
+            height: 45px;
+            border-radius: 5em;
+        }
+
+        .left-patch,
+        .right-patch {
+            position: absolute;
+            top: 36px;
+            width: 47px;
+            height: 70px;
+            background: #C68863;
+        }
+
+        .left-patch {
+            left: 106px;
+            border-bottom-left-radius: 1.5em;
+            border-bottom-right-radius: .5em;
+        }
+
+        .right-patch {
+            right: 106px;
+            border-bottom-right-radius: 1.5em;
+            border-bottom-left-radius: .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="face">
+            <div class="hair"></div>
+            <div class="eye-level">
+                <div class="left-ear"></div>
+                <div class="left-hair"></div>
+                <div class="glasses">
+                    <div class="glass"></div>
+                    <div class="glass-connector"></div>
+                    <div class="glass"></div>
+                </div>
+                <div class="right-ear"></div>
+                <div class="right-hair"></div>
+            </div>
+            <div class="cheek-level">
+                <div class="left-beard"></div>
+                <div class="right-beard"></div>
+            </div>
+            <div class="lower-beard">
+                <div class="left-gap"></div>
+                <div class="left-patch"></div>
+                <div class="right-patch"></div>
+                <div class="lips"></div>
+                <div class="right-gap"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
