@@ -16,8 +16,6 @@
         }
 
         .container {
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -59,15 +57,13 @@
             border-bottom-right-radius: 4em;
         }
 
-        .eye-level,
-        .glasses {
+        .eye-level {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
         }
 
-        .left-ear,
-        .right-ear {
+        .ears {
             position: relative;
             top: 80px;
             width: 45px;
@@ -88,8 +84,7 @@
             border-top-right-radius: 3em;
         }
 
-        .left-hair,
-        .right-hair {
+        .side-hair {
             position: absolute;
             top: 60px;
             width: 35px;
@@ -118,13 +113,12 @@
         .glass-connector {
             position: relative;
             top: 130px;
-            background: #180c05;
+            background: #180c05 ;
             width: 45px;
             height: 15px;
         }
 
-        .left-beard,
-        .right-beard {
+        .side-beard {
             position: absolute;
             top: 160px;
             width: 10px;
@@ -159,8 +153,7 @@
             justify-content: space-between;
         }
 
-        .left-gap,
-        .right-gap {
+        .gaps {
             position: relative;
             bottom: 40px;
             width: 25px;
@@ -191,8 +184,7 @@
             border-radius: 5em;
         }
 
-        .left-patch,
-        .right-patch {
+        .patches {
             position: absolute;
             top: 36px;
             width: 47px;
@@ -219,26 +211,24 @@
         <div class="face">
             <div class="hair"></div>
             <div class="eye-level">
-                <div class="left-ear"></div>
-                <div class="left-hair"></div>
-                <div class="glasses">
-                    <div class="glass"></div>
-                    <div class="glass-connector"></div>
-                    <div class="glass"></div>
-                </div>
-                <div class="right-ear"></div>
-                <div class="right-hair"></div>
+                <div class="left-ear ears"></div>
+                <div class="left-hair side-hair"></div>
+                <div class="glass"></div>
+                <div class="glass-connector"></div>
+                <div class="glass"></div>
+                <div class="right-ear ears"></div>
+                <div class="right-hair side-hair"></div>
             </div>
             <div class="cheek-level">
-                <div class="left-beard"></div>
-                <div class="right-beard"></div>
+                <div class="left-beard side-beard"></div>
+                <div class="right-beard side-beard"></div>
             </div>
             <div class="lower-beard">
-                <div class="left-gap"></div>
-                <div class="left-patch"></div>
-                <div class="right-patch"></div>
+                <div class="left-gap gaps"></div>
+                <div class="left-patch patches"></div>
+                <div class="right-patch patches"></div>
                 <div class="lips"></div>
-                <div class="right-gap"></div>
+                <div class="right-gap gaps"></div>
             </div>
         </div>
     </div>
